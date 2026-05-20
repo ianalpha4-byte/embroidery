@@ -8,16 +8,16 @@ const products = {
     title: 'Curtains',
     folder: 'curtains',
     items: [
-      { file: 'curtain1.jfif', name: 'Elegant Sheer Curtain', desc: 'Lightweight polyester, ivory white, 2.5m length' },
-      { file: 'curtain2.jfif', name: 'Blackout Velvet Curtain', desc: 'Thick velvet fabric, deep burgundy, 2.7m length' },
-      { file: 'curtain3.jfif', name: 'Patterned Jacquard Curtain', desc: 'Jacquard weave, gold & cream pattern, 2.5m length' },
-      { file: 'curtain4.jfif', name: 'Linen Blend Curtain', desc: 'Natural linen blend, soft beige, 2.4m length' },
-      { file: 'curtain5.jfif', name: 'Embroidered Curtain', desc: 'Cotton with embroidery, dusty rose, 2.5m length' },
-      { file: 'curtain6.jfif', name: 'Thermal Insulated Curtain', desc: 'Triple-weave fabric, charcoal grey, 2.7m length' },
-      { file: 'curtain7.jfif', name: 'Sheer Voile Panel', desc: 'Soft voile, pure white, 2.5m length' },
-      { file: 'curtain8.jfif', name: 'Pleated Silk Curtain', desc: 'Silk blend, champagne gold, 2.8m length' },
-      { file: 'curtain9.jfif', name: 'Tab Top Curtain', desc: 'Cotton tab top, sage green, 2.4m length' },
-      { file: 'curtain10.jfif', name: 'Double Layer Curtain', desc: 'Sheer + blackout combo, navy & white, 2.6m length' }
+      { file: 'curtain (1).jpeg', name: 'Elegant Sheer Curtain', desc: 'Lightweight polyester, ivory white, 2.5m length' },
+      { file: 'curtain (2).jpeg', name: 'Blackout Velvet Curtain', desc: 'Thick velvet fabric, deep burgundy, 2.7m length' },
+      { file: 'curtain (3).jpeg', name: 'Patterned Jacquard Curtain', desc: 'Jacquard weave, gold & cream pattern, 2.5m length' },
+      { file: 'curtain (4).jpeg', name: 'Linen Blend Curtain', desc: 'Natural linen blend, soft beige, 2.4m length' },
+      { file: 'curtain (5).jpeg', name: 'Embroidered Curtain', desc: 'Cotton with embroidery, dusty rose, 2.5m length' },
+      { file: 'curtain (6).jpeg', name: 'Thermal Insulated Curtain', desc: 'Triple-weave fabric, charcoal grey, 2.7m length' },
+      { file: 'curtain (7).jpeg', name: 'Sheer Voile Panel', desc: 'Soft voile, pure white, 2.5m length' },
+      { file: 'curtain (8).jpeg', name: 'Pleated Silk Curtain', desc: 'Silk blend, champagne gold, 2.8m length' },
+      { file: 'curtain (9).jpeg', name: 'Tab Top Curtain', desc: 'Cotton tab top, sage green, 2.4m length' },
+      { file: 'curtain (10).jpeg', name: 'Double Layer Curtain', desc: 'Sheer + blackout combo, navy & white, 2.6m length' }
     ]
   },
   'curtain-rods': {
@@ -32,7 +32,7 @@ const products = {
       { file: 'rod (6).jfif', name: 'Bay Window Rod', desc: 'Flexible steel, chrome finish, adjustable angles' },
       { file: 'rod (7).jfif', name: 'Tension Rod', desc: 'No-drill install, stainless steel, up to 1.5m' },
       { file: 'rod (8).jfif', name: 'Industrial Pipe Rod', desc: 'Iron pipe style, matte black, 2m length' },
-      { file: 'rod (9).jfif', name: 'Crystal End Rod', desc: 'Metal with crystal finials, silver, 2.5m length' },
+      { file: 'rod (9).jpeg', name: 'Crystal End Rod', desc: 'Metal with crystal finials, silver, 2.5m length' },
       { file: 'rod (10).jfif', name: 'Motorized Curtain Track', desc: 'Remote-controlled, aluminum, extends to 5m' },
       { file: 'rod (11).jfif', name: 'Corner Curtain Rod', desc: 'L-shaped connector, brushed gold, 2m each side' },
       { file: 'rod (12).jfif', name: 'Expandable Rod Set', desc: 'Telescopic steel, bronze finish, 1.2–2.4m range' }
@@ -42,16 +42,16 @@ const products = {
     title: 'Pillows',
     folder: 'pillows',
     items: [
-      { file: 'pillow (1).jfif', name: 'Memory Foam Pillow', desc: 'Orthopedic memory foam, medium-firm support' },
-      { file: 'pillow (2).jfif', name: 'Velvet Throw Pillow', desc: 'Decorative velvet, emerald green, ultra-soft' },
-      { file: 'pillow (3).jfif', name: 'Cotton Standard Pillow', desc: '100% cotton cover, soft hollow-fibre fill' },
-      { file: 'pillow (4).jfif', name: 'Embroidered Accent Pillow', desc: 'Hand-stitched design, gold on cream, plush' },
-      { file: 'pillow (5).jfif', name: 'Down Alternative Pillow', desc: 'Hypoallergenic fill, medium softness, king size' },
-      { file: 'pillow (6).jfif', name: 'Lumbar Support Pillow', desc: 'Ergonomic shape, charcoal fabric, firm support' },
-      { file: 'pillow (7).jfif', name: 'Satin Pillow', desc: 'Smooth satin cover, blush pink, gentle on skin' },
-      { file: 'pillow (8).jfif', name: 'Floor Cushion', desc: 'Extra-large round, bohemian pattern, medium-soft' },
-      { file: 'pillow (9).jfif', name: 'Body Pillow', desc: 'Full-length support, microfibre, ultra-soft' },
-      { file: 'pillow (10).jfif', name: 'Outdoor Cushion', desc: 'Weather-resistant fabric, teal, firm comfort' }
+      { file: 'pillow (1).jpeg', name: 'Memory Foam Pillow', desc: 'Orthopedic memory foam, medium-firm support' },
+      { file: 'pillow (2).jpeg', name: 'Velvet Throw Pillow', desc: 'Decorative velvet, emerald green, ultra-soft' },
+      { file: 'pillow (3).jpeg', name: 'Cotton Standard Pillow', desc: '100% cotton cover, soft hollow-fibre fill' },
+      { file: 'pillow (4).jpeg', name: 'Embroidered Accent Pillow', desc: 'Hand-stitched design, gold on cream, plush' },
+      { file: 'pillow (5).jpeg', name: 'Down Alternative Pillow', desc: 'Hypoallergenic fill, medium softness, king size' },
+      { file: 'pillow (6).jpeg', name: 'Lumbar Support Pillow', desc: 'Ergonomic shape, charcoal fabric, firm support' },
+      { file: 'pillow (7).jpeg', name: 'Satin Pillow', desc: 'Smooth satin cover, blush pink, gentle on skin' },
+      { file: 'pillow (8).jpeg', name: 'Floor Cushion', desc: 'Extra-large round, bohemian pattern, medium-soft' },
+      { file: 'pillow (9).jpeg', name: 'Body Pillow', desc: 'Full-length support, microfibre, ultra-soft' },
+      { file: 'pillow (10).jpeg', name: 'Outdoor Cushion', desc: 'Weather-resistant fabric, teal, firm comfort' }
     ]
   },
   carpets: {
@@ -66,9 +66,9 @@ const products = {
       { file: 'carpet (6).jfif', name: 'Runner Carpet', desc: '2×8 ft, burgundy and navy, medium pile' },
       { file: 'carpet (7).jfif', name: 'Plush Velvet Carpet', desc: '6×9 ft, royal blue, ultra-soft velvet pile' },
       { file: 'carpet (8).jfif', name: 'Anti-Slip Kitchen Mat', desc: '2×4 ft, waterproof backing, low profile' },
-      { file: 'carpet (9).jfif', name: 'Moroccan Trellis Rug', desc: '5×7 ft, ivory & grey trellis, medium pile' },
-      { file: 'carpet (10).jfif', name: 'Vintage Overdyed Carpet', desc: '6×8 ft, faded turquoise, soft wool blend' },
-      { file: 'carpet (11).jfif', name: 'Striped Cotton Rug', desc: '4×6 ft, multi-colour stripes, flat weave' }
+      { file: 'carpet (9).jpeg', name: 'Moroccan Trellis Rug', desc: '5×7 ft, ivory & grey trellis, medium pile' },
+      { file: 'carpet (10).jpeg', name: 'Vintage Overdyed Carpet', desc: '6×8 ft, faded turquoise, soft wool blend' },
+      { file: 'carpet (11).jpeg', name: 'Striped Cotton Rug', desc: '4×6 ft, multi-colour stripes, flat weave' }
     ]
   },
   duvets: {
@@ -77,7 +77,7 @@ const products = {
     items: [
       { file: 'duvet (1).jfif', name: 'Luxury Microfibre Duvet', desc: 'All-season warmth, queen size, 10.5 tog' },
       { file: 'duvet (2).jfif', name: 'Cotton Sateen Duvet Set', desc: 'Silky-smooth finish, king size, extra warm' },
-      { file: 'duvet (3).jfif', name: 'Printed Floral Duvet', desc: 'Rose garden print, queen size, medium warmth' },
+      { file: 'duvet (3).jpeg', name: 'Printed Floral Duvet', desc: 'Rose garden print, queen size, medium warmth' },
       { file: 'duvet (4).jfif', name: 'Quilted Comforter', desc: 'Box-stitch quilt, charcoal grey, king size' },
       { file: 'duvet (5).jfif', name: 'Lightweight Summer Duvet', desc: 'Breathable cotton, white, single size, 4.5 tog' },
       { file: 'duvet (6).jfif', name: 'Reversible Duvet Cover', desc: 'Two-tone navy/grey, queen size, with ties' },
@@ -112,7 +112,7 @@ const products = {
       { file: 'loosecove (2).jfif', name: 'L-Shape Sectional Cover', desc: 'L-shaped sofa fit, polyester, cream white' },
       { file: 'loosecove (3).jfif', name: 'Quilted Sofa Protector', desc: '2-seater quilted, waterproof, chocolate brown' },
       { file: 'loosecove (4).jfif', name: 'Velvet Couch Cover', desc: '3-seater velvet, plush emerald, elastic fit' },
-      { file: 'loosecove (5).jfif', name: 'Recliner Chair Cover', desc: 'Single recliner fit, stretch fabric, beige' },
+      { file: 'loosecove (5).jpeg', name: 'Recliner Chair Cover', desc: 'Single recliner fit, stretch fabric, beige' },
       { file: 'loosecove (6).jfif', name: 'Armchair Slipcover', desc: 'Wingback chair fit, linen look, light grey' },
       { file: 'loosecove (7).jfif', name: 'Loveseat Cover', desc: '2-seater stretch, floral jacquard, dusty pink' },
       { file: 'loosecove (8).jfif', name: 'Futon Sofa Cover', desc: 'Futon bed cover, reversible, navy/grey' },
@@ -204,7 +204,7 @@ function renderCategories() {
 
     card.innerHTML = `
       <div class="category-card__image">
-        <img src="${imgSrc}" alt="${product.title} collection at Soft Living Interiors" loading="lazy">
+        <img src="${imgSrc}" alt="${product.title} collection at Ann's Interior Decors" loading="lazy">
       </div>
       <div class="category-card__body">
         <h3 class="category-card__title">${product.title}</h3>
@@ -234,7 +234,7 @@ function renderGalleries() {
     product.items.forEach((item, index) => {
       const imgSrc = `${product.folder}/${item.file}`;
       const waMsg = encodeURIComponent(
-        `Hello, I'm interested in this product from Soft Living Interiors.\nProduct: ${product.title}\nImage: ${item.file}`
+        `Hello, I'm interested in this product from Ann's Interior Decors.\nProduct: ${product.title}\nImage: ${item.file}`
       );
 
       itemsHTML += `
@@ -354,7 +354,7 @@ function updateLightbox() {
   lightboxCaption.textContent = `${img.name} — ${img.desc}`;
 
   const waMsg = encodeURIComponent(
-    `Hello, I'm interested in this product from Soft Living Interiors.\nProduct: ${img.categoryTitle}\nImage: ${img.file}`
+    `Hello, I'm interested in this product from Ann's Interior Decors.\nProduct: ${img.categoryTitle}\nImage: ${img.file}`
   );
   lightboxOrderBtn.href = `${WHATSAPP_BASE_URL}?text=${waMsg}`;
 }
@@ -437,11 +437,57 @@ function initActiveNavTracking() {
 // Handled natively by browser since we have CSS scroll-behavior: smooth.
 // If there was any JS blocking it, it has been removed.
 
+// ===== FORM SUBMISSION HANDLER =====
+function initFormSubmission() {
+  const form = document.getElementById('course-form');
+  const feedback = document.getElementById('form-feedback');
+  if (!form || !feedback) return;
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    // Set loading state
+    feedback.className = 'form-feedback info';
+    feedback.textContent = 'Sending application...';
+    feedback.style.display = 'block';
+
+    const formData = new FormData(form);
+    const formEmail = form.action.split('/').pop();
+    const ajaxUrl = `https://formsubmit.co/ajax/${formEmail}`;
+
+    try {
+      const response = await fetch(ajaxUrl, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify(Object.fromEntries(formData))
+      });
+
+      const data = await response.json();
+
+      if (response.ok && data.success !== 'false') {
+        feedback.className = 'form-feedback success';
+        feedback.textContent = data.message || 'Application submitted successfully! We will contact you soon.';
+        form.reset();
+      } else {
+        throw new Error(data.message || 'Submission failed');
+      }
+    } catch (err) {
+      console.error('FormSubmit Error:', err);
+      feedback.className = 'form-feedback error';
+      feedback.textContent = err.message || 'Failed to submit application. Please try again or contact us directly on WhatsApp.';
+    }
+  });
+}
+
 // ===== INITIALIZE =====
 document.addEventListener('DOMContentLoaded', () => {
   renderCategories();
   renderGalleries();
   initScrollReveal();
   initActiveNavTracking();
+  initFormSubmission();
   handleScroll(); // initial check
 });
