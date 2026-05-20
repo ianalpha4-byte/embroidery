@@ -456,13 +456,13 @@ function initFormSubmission() {
     const ajaxUrl = `https://formsubmit.co/ajax/${formEmail}`;
 
     try {
+      // Use URLSearchParams (urlencoded) to avoid CORS preflight options check
       const response = await fetch(ajaxUrl, {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json',
           'Accept': 'application/json'
         },
-        body: JSON.stringify(Object.fromEntries(formData))
+        body: new URLSearchParams(formData)
       });
 
       const data = await response.json();
@@ -475,9 +475,12 @@ function initFormSubmission() {
         throw new Error(data.message || 'Submission failed');
       }
     } catch (err) {
-      console.error('FormSubmit Error:', err);
-      feedback.className = 'form-feedback error';
-      feedback.textContent = err.message || 'Failed to submit application. Please try again or contact us directly on WhatsApp.';
+      console.warn('FormSubmit AJAX failed, falling back to standard submission:', err);
+      feedback.className = 'form-feedback info';
+      feedback.textContent = 'Submitting application...';
+      
+      // Fallback: submit natively (bypasses event listener to prevent loop)
+      form.submit();
     }
   });
 }
