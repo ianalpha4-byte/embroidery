@@ -452,30 +452,28 @@ function initFormSubmission() {
     feedback.style.display = 'block';
 
     const formData = new FormData(form);
-    const formEmail = form.action.split('/').pop();
-    const ajaxUrl = `https://formsubmit.co/ajax/${formEmail}`;
 
     try {
-      // Use URLSearchParams (urlencoded) to avoid CORS preflight options check
-      const response = await fetch(ajaxUrl, {
+      const response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
         headers: {
+          'Content-Type': 'application/json',
           'Accept': 'application/json'
         },
-        body: new URLSearchParams(formData)
+        body: JSON.stringify(Object.fromEntries(formData))
       });
 
       const data = await response.json();
 
-      if (response.ok && data.success !== 'false') {
+      if (response.status === 200) {
         feedback.className = 'form-feedback success';
-        feedback.textContent = data.message || 'Application submitted successfully! We will contact you soon.';
+        feedback.textContent = 'Application submitted successfully! We will contact you soon.';
         form.reset();
       } else {
         throw new Error(data.message || 'Submission failed');
       }
     } catch (err) {
-      console.warn('FormSubmit AJAX failed, falling back to standard submission:', err);
+      console.warn('Web3Forms AJAX failed, falling back to standard submission:', err);
       feedback.className = 'form-feedback info';
       feedback.textContent = 'Submitting application...';
       
