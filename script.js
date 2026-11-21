@@ -24,7 +24,6 @@ const products = {
     title: 'Curtain Rods',
     folder: 'rods',
     items: [
-      { file: 'rod (2).jfif', name: 'Decorative Finial Rod', desc: '1.5-inch diameter, antique brass, 2.5m length' },
       { file: 'rod (3).jfif', name: 'Double Curtain Rod', desc: 'Dual rod system, matte black, adjustable to 3m' },
       { file: 'rod (5).jfif', name: 'Ceiling Mount Track', desc: 'Aluminum track, white finish, extends to 4m' },
       { file: 'rod (9).jpeg', name: 'Crystal End Rod', desc: 'Metal with crystal finials, silver, 2.5m length' },
@@ -55,7 +54,6 @@ const products = {
       { file: 'carpet (3).jfif', name: 'Geometric Modern Rug', desc: '5×7 ft, grey & gold pattern, flat weave' },
       { file: 'carpet (4).jfif', name: 'Sisal Natural Carpet', desc: '4×6 ft, natural sisal fibre, coarse texture' },
       { file: 'carpet (5).jfif', name: 'Round Jute Rug', desc: '5 ft diameter, braided jute, rustic texture' },
-      { file: 'carpet (6).jfif', name: 'Runner Carpet', desc: '2×8 ft, burgundy and navy, medium pile' },
       { file: 'carpet (7).jfif', name: 'Plush Velvet Carpet', desc: '6×9 ft, royal blue, ultra-soft velvet pile' },
       { file: 'carpet (8).jfif', name: 'Anti-Slip Kitchen Mat', desc: '2×4 ft, waterproof backing, low profile' },
       { file: 'carpet (9).jpeg', name: 'Moroccan Trellis Rug', desc: '5×7 ft, ivory & grey trellis, medium pile' },
@@ -70,13 +68,6 @@ const products = {
       { file: 'duvet (1).jfif', name: 'Luxury Microfibre Duvet', desc: 'All-season warmth, queen size, 10.5 tog' },
       { file: 'duvet (2).jfif', name: 'Cotton Sateen Duvet Set', desc: 'Silky-smooth finish, king size, extra warm' },
       { file: 'duvet (3).jpeg', name: 'Printed Floral Duvet', desc: 'Rose garden print, queen size, medium warmth' },
-      { file: 'duvet (4).jfif', name: 'Quilted Comforter', desc: 'Box-stitch quilt, charcoal grey, king size' },
-      { file: 'duvet (5).jfif', name: 'Lightweight Summer Duvet', desc: 'Breathable cotton, white, single size, 4.5 tog' },
-      { file: 'duvet (6).jfif', name: 'Reversible Duvet Cover', desc: 'Two-tone navy/grey, queen size, with ties' },
-      { file: 'duvet (7).jfif', name: 'Kids Character Duvet', desc: 'Fun cartoon prints, single size, medium warmth' },
-      { file: 'duvet (8).jfif', name: 'Silk-Fill Luxury Duvet', desc: 'Natural silk filling, king size, temperature regulating' },
-      { file: 'duvet (9).jfif', name: 'Striped Duvet Set', desc: 'Modern stripes, teal & white, queen size' },
-      { file: 'duvet (10).jfif', name: 'Winter Heavyweight Duvet', desc: 'Extra thick fill, queen size, 15 tog warmth' },
       { file: 'duvet (11).jfif', name: 'Embossed Velvet Duvet', desc: 'Textured velvet cover, deep plum, king size' }
     ]
   },
