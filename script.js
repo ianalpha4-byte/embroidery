@@ -76,14 +76,14 @@ const products = {
     folder: 'bedsheets',
     items: [
       { file: 'sheets (1).jfif', name: 'Egyptian Cotton Sheet Set', desc: '400 thread count, pure white, king size' },
-      { file: 'sheets (2).jfif', name: 'Jersey Knit Fitted Sheet', desc: 'Stretchy cotton jersey, heather grey, queen size' },
-      { file: 'sheets (3).jfif', name: 'Satin Silk Sheet Set', desc: 'Luxurious satin, champagne gold, queen size' },
+      
+     
       { file: 'sheets (4).jfif', name: 'Polycotton Flat Sheet', desc: 'Easy-care blend, sky blue, double size' },
-      { file: 'sheets (5).jfif', name: 'Flannel Winter Sheet', desc: 'Brushed cotton flannel, plaid pattern, king size' },
+     
       { file: 'sheets (6).jfif', name: 'Bamboo Fibre Sheet', desc: 'Eco-friendly bamboo, sage green, queen size' },
       { file: 'sheets (7).jfif', name: 'Fitted Sheet with Elastic', desc: 'Deep pocket design, crisp white, king size' },
       { file: 'sheets (8).jfif', name: 'Printed Floral Sheet Set', desc: 'Botanical print, pink & green, double size' },
-      { file: 'sheets (9).jfif', name: 'Microfibre Sheet Set', desc: 'Ultra-soft microfibre, navy blue, king size' },
+  
       { file: 'sheets (10).jfif', name: 'Linen Blend Sheet', desc: 'French linen look, natural oatmeal, queen size' }
     ]
   },
