@@ -1236,6 +1236,132 @@ h1, h2, h3, h4 {
   color: var(--clr-accent);
 }
 
+.footer__policy-link,
+.policy-link {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.footer__policy-link {
+  font-size: var(--fs-xs);
+  transition: color var(--transition-fast);
+}
+
+.footer__policy-link:hover,
+.policy-link:hover {
+  color: var(--clr-accent);
+}
+
+.form-consent {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-xs);
+  margin-top: var(--space-md);
+  font-size: var(--fs-xs);
+  line-height: 1.5;
+}
+
+.form-consent input {
+  width: 16px;
+  height: 16px;
+  margin-top: 2px;
+  accent-color: var(--clr-primary);
+}
+
+.form-consent .policy-link {
+  color: var(--clr-primary);
+  text-decoration: underline;
+}
+
+.policy-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-lg);
+}
+
+.policy-modal.is-open {
+  display: flex;
+}
+
+.policy-modal__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(24, 20, 17, 0.72);
+  backdrop-filter: blur(4px);
+}
+
+.policy-modal__panel {
+  position: relative;
+  width: min(760px, 100%);
+  max-height: 82vh;
+  overflow-y: auto;
+  padding: clamp(24px, 5vw, 48px);
+  border-radius: var(--radius-md);
+  background: var(--clr-white);
+  box-shadow: var(--shadow-lg);
+}
+
+.policy-modal__close {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  width: 36px;
+  height: 36px;
+  border: 0;
+  border-radius: var(--radius-full);
+  background: rgba(139, 111, 78, 0.1);
+  color: var(--clr-dark);
+  font-size: 26px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.policy-modal__eyebrow {
+  margin-bottom: var(--space-xs);
+  color: var(--clr-primary);
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.policy-modal__title {
+  margin: 0 0 var(--space-xs);
+  font-family: var(--font-heading);
+  font-size: clamp(28px, 5vw, 40px);
+}
+
+.policy-modal__updated {
+  margin-bottom: var(--space-lg);
+  color: var(--clr-text-light);
+  font-size: var(--fs-xs);
+}
+
+.policy-modal__content h3 {
+  margin: var(--space-lg) 0 var(--space-xs);
+  color: var(--clr-dark);
+  font-size: var(--fs-h4);
+}
+
+.policy-modal__content p,
+.policy-modal__content li {
+  color: var(--clr-text);
+  line-height: 1.75;
+}
+
+.policy-modal__content ul {
+  padding-left: 20px;
+}
+
 /* ===== FLOATING WHATSAPP ===== */
 .whatsapp-float {
   position: fixed;

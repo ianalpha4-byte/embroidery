@@ -225,6 +225,10 @@
               <label for="phone">Contact Number</label>
               <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
             </div>
+            <div class="form-consent">
+              <input type="checkbox" id="course-consent" name="privacy_consent" value="accepted" required>
+              <label for="course-consent">I agree to the <button type="button" class="policy-link" data-policy="privacy">Privacy Policy</button> and <button type="button" class="policy-link" data-policy="terms">Terms of Service</button>.</label>
+            </div>
             <button type="submit" class="btn btn--primary" style="width: 100%; border: none; cursor: pointer; justify-content: center; margin-top: var(--space-md);">Submit Application</button>
             <div id="form-feedback" class="form-feedback"></div>
           </form>
@@ -429,12 +433,24 @@
       <div class="footer__bottom">
         <p class="footer__copyright">&copy; 2026 Ann's Interior Decors – Ann's Embroidery Centre. All rights reserved.</p>
         <div class="footer__bottom-links">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Service</a>
+          <button type="button" class="footer__policy-link" data-policy="privacy">Privacy Policy</button>
+          <button type="button" class="footer__policy-link" data-policy="terms">Terms of Service</button>
         </div>
       </div>
     </div>
   </footer>
+
+  <!-- ===== PRIVACY POLICY & TERMS ===== -->
+  <div class="policy-modal" id="policy-modal" role="dialog" aria-modal="true" aria-labelledby="policy-modal-title" aria-hidden="true">
+    <div class="policy-modal__backdrop" data-policy-close></div>
+    <div class="policy-modal__panel" role="document">
+      <button type="button" class="policy-modal__close" data-policy-close aria-label="Close policy">&times;</button>
+      <p class="policy-modal__eyebrow">Legal Information</p>
+      <h2 class="policy-modal__title" id="policy-modal-title"></h2>
+      <p class="policy-modal__updated" id="policy-modal-updated"></p>
+      <div class="policy-modal__content" id="policy-modal-content"></div>
+    </div>
+  </div>
 
   <!-- ===== LIGHTBOX MODAL ===== -->
   <div class="lightbox" id="lightbox" role="dialog" aria-label="Image lightbox viewer">

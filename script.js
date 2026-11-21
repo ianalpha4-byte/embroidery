@@ -419,6 +419,113 @@ function initActiveNavTracking() {
 // Handled natively by browser since we have CSS scroll-behavior: smooth.
 // If there was any JS blocking it, it has been removed.
 
+// ===== PRIVACY POLICY & TERMS =====
+const policyContent = {
+  privacy: {
+    title: 'Privacy Policy',
+    updated: 'Effective 21 November 2026',
+    content: `
+      <p>Ann's Interior Decors – Ann's Embroidery Centre ("we", "our", or "us") respects your privacy. This policy explains what information we collect through this website, how we use it, and the choices available to you.</p>
+
+      <h3>Information we collect</h3>
+      <p>When you submit the embroidery course application form, we collect the name, email address, and phone number you provide. When you contact us through WhatsApp, email, or social media, we receive the information included in that communication.</p>
+
+      <h3>How we use information</h3>
+      <ul>
+        <li>To respond to course applications and product enquiries.</li>
+        <li>To arrange products, training, delivery, or other services you request.</li>
+        <li>To maintain and improve our website and customer service.</li>
+      </ul>
+
+      <h3>Third-party services</h3>
+      <p>The course form is processed by Web3Forms. Google Maps supplies the embedded map, and Google Fonts supplies the fonts used on the site. WhatsApp, email, Facebook, and TikTok open or use their respective third-party services when selected. Those providers process information under their own privacy policies.</p>
+
+      <h3>Storage, sharing, and retention</h3>
+      <p>Application details are sent to us through Web3Forms and may also be retained by the form provider for delivery and security purposes. We do not sell personal information. We share it only when needed to provide a requested service, comply with law, or protect legitimate rights.</p>
+      <p>We keep personal information only for as long as reasonably necessary for the purpose collected, legal or accounting requirements, and customer-service records.</p>
+
+      <h3>Your choices</h3>
+      <p>You may ask to access, correct, or delete personal information that we hold, or ask us how it is used, by emailing <a href="mailto:Annmaiga2012@gmail.com">Annmaiga2012@gmail.com</a>. We may need to verify your identity and may retain limited records where permitted by applicable law.</p>
+
+      <h3>Security and changes</h3>
+      <p>We use reasonable measures to protect information, but no internet transmission or storage system can be guaranteed completely secure. We may update this policy and will display a revised effective date on this page.</p>
+
+      <h3>Contact</h3>
+      <p>Ann's Embroidery Centre, Flyover (Wakimbo) along Nairobi–Naivasha Highway, Kenya.<br>
+      Email: <a href="mailto:Annmaiga2012@gmail.com">Annmaiga2012@gmail.com</a><br>
+      WhatsApp: <a href="https://wa.me/254728066999" target="_blank" rel="noopener noreferrer">0728 066 999</a></p>
+    `
+  },
+  terms: {
+    title: 'Terms of Service',
+    updated: 'Effective 21 November 2026',
+    content: `
+      <p>By using this website or contacting Ann's Interior Decors – Ann's Embroidery Centre, you agree to these Terms of Service.</p>
+
+      <h3>Products and information</h3>
+      <p>Product photographs and descriptions are provided for general presentation. Availability, dimensions, colours, finish, and specifications may vary. Please confirm details with us before ordering.</p>
+
+      <h3>Enquiries, orders, and payment</h3>
+      <p>Submitting an enquiry or course application does not create a binding order or guarantee a place in training. Availability and final pricing must be confirmed directly with us. Any deposit, payment, delivery, collection, cancellation, or return terms will be agreed separately for the relevant transaction.</p>
+
+      <h3>Embroidery course</h3>
+      <p>Course information, fees, schedules, materials, and admission requirements must be confirmed with our team. Completion of an application does not guarantee admission. Participants are responsible for providing accurate application details.</p>
+
+      <h3>Website use</h3>
+      <p>You agree not to misuse the website, interfere with its operation, attempt unauthorized access, or submit unlawful, misleading, or harmful content. We may update or remove website content where necessary.</p>
+
+      <h3>Third-party services and links</h3>
+      <p>The website links to WhatsApp, email, Google Maps, social media, and external form services. We are not responsible for the availability or operation of third-party services or for their separate terms and policies.</p>
+
+      <h3>Liability</h3>
+      <p>We aim to keep the website accurate and available, but we do not guarantee that it will be uninterrupted or error-free. To the extent permitted by applicable law, we are not liable for indirect or consequential losses arising from use of this website or reliance on published information.</p>
+
+      <h3>Changes and governing law</h3>
+      <p>These terms may be updated at any time by publishing a revised version on this website. Applicable Kenya law governs these terms, and disputes should first be addressed through direct contact by emailing <a href="mailto:Annmaiga2012@gmail.com">Annmaiga2012@gmail.com</a>.</p>
+    `
+  }
+};
+
+function initPolicyModal() {
+  const modal = document.getElementById('policy-modal');
+  const title = document.getElementById('policy-modal-title');
+  const updated = document.getElementById('policy-modal-updated');
+  const content = document.getElementById('policy-modal-content');
+  if (!modal || !title || !updated || !content) return;
+
+  let lastTrigger = null;
+
+  const closeModal = () => {
+    modal.classList.remove('is-open');
+    modal.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+    if (lastTrigger) lastTrigger.focus();
+  };
+
+  document.querySelectorAll('[data-policy]').forEach((trigger) => {
+    trigger.addEventListener('click', () => {
+      const policy = policyContent[trigger.dataset.policy];
+      if (!policy) return;
+      lastTrigger = trigger;
+      title.textContent = policy.title;
+      updated.textContent = policy.updated;
+      content.innerHTML = policy.content;
+      modal.classList.add('is-open');
+      modal.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+      modal.querySelector('.policy-modal__close').focus();
+    });
+  });
+
+  modal.querySelectorAll('[data-policy-close]').forEach((trigger) => {
+    trigger.addEventListener('click', closeModal);
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && modal.classList.contains('is-open')) closeModal();
+  });
+}
+
 // ===== FORM SUBMISSION HANDLER =====
 function initFormSubmission() {
   const form = document.getElementById('course-form');
@@ -472,5 +579,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initScrollReveal();
   initActiveNavTracking();
   initFormSubmission();
+  initPolicyModal();
   handleScroll(); // initial check
 });
