@@ -93,13 +93,12 @@ const products = {
     items: [
       { file: 'loosecove (1).jfif', name: 'Stretch Sofa Slipcover', desc: '3-seater fit, spandex blend, charcoal grey' },
       { file: 'loosecove (2).jfif', name: 'L-Shape Sectional Cover', desc: 'L-shaped sofa fit, polyester, cream white' },
-      { file: 'loosecove (3).jfif', name: 'Quilted Sofa Protector', desc: '2-seater quilted, waterproof, chocolate brown' },
+   
       { file: 'loosecove (4).jfif', name: 'Velvet Couch Cover', desc: '3-seater velvet, plush emerald, elastic fit' },
-      { file: 'loosecove (5).jpeg', name: 'Recliner Chair Cover', desc: 'Single recliner fit, stretch fabric, beige' },
+      { file: 'loosecove (5).jpeg', name: 'Jumbo couch Cover', desc: 'Single recliner fit, stretch fabric, beige' },
       { file: 'loosecove (6).jfif', name: 'Armchair Slipcover', desc: 'Wingback chair fit, linen look, light grey' },
       { file: 'loosecove (7).jfif', name: 'Loveseat Cover', desc: '2-seater stretch, floral jacquard, dusty pink' },
-      { file: 'loosecove (8).jfif', name: 'Futon Sofa Cover', desc: 'Futon bed cover, reversible, navy/grey' },
-      { file: 'loosecove (9).jfif', name: 'Ottoman Cover', desc: 'Square ottoman fit, knitted fabric, ivory' },
+ 
       { file: 'loosecove (10).jfif', name: 'Pet-Proof Sofa Cover', desc: '3-seater, waterproof, anti-scratch, dark grey' }
     ]
   }
