@@ -24,18 +24,10 @@ const products = {
     title: 'Curtain Rods',
     folder: 'rods',
     items: [
-      { file: 'rod (1).jfif', name: 'Classic Metal Rod', desc: '1-inch diameter, brushed nickel, extends to 3m' },
       { file: 'rod (2).jfif', name: 'Decorative Finial Rod', desc: '1.5-inch diameter, antique brass, 2.5m length' },
       { file: 'rod (3).jfif', name: 'Double Curtain Rod', desc: 'Dual rod system, matte black, adjustable to 3m' },
-      { file: 'rod (4).jfif', name: 'Wooden Curtain Pole', desc: 'Solid wood, walnut finish, 2.8m length' },
       { file: 'rod (5).jfif', name: 'Ceiling Mount Track', desc: 'Aluminum track, white finish, extends to 4m' },
-      { file: 'rod (6).jfif', name: 'Bay Window Rod', desc: 'Flexible steel, chrome finish, adjustable angles' },
-      { file: 'rod (7).jfif', name: 'Tension Rod', desc: 'No-drill install, stainless steel, up to 1.5m' },
-      { file: 'rod (8).jfif', name: 'Industrial Pipe Rod', desc: 'Iron pipe style, matte black, 2m length' },
       { file: 'rod (9).jpeg', name: 'Crystal End Rod', desc: 'Metal with crystal finials, silver, 2.5m length' },
-      { file: 'rod (10).jfif', name: 'Motorized Curtain Track', desc: 'Remote-controlled, aluminum, extends to 5m' },
-      { file: 'rod (11).jfif', name: 'Corner Curtain Rod', desc: 'L-shaped connector, brushed gold, 2m each side' },
-      { file: 'rod (12).jfif', name: 'Expandable Rod Set', desc: 'Telescopic steel, bronze finish, 1.2–2.4m range' }
     ]
   },
   pillows: {
